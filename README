@@ -1,0 +1,13 @@
+# Build an application that allows users with administrative rights to perform the following tasks:
+- View the list of users in the system.
+- Obtain information about the privileges of each user/role on data objects.
+- Allow the creation, deletion, and modification (adjustment) of users or roles.
+- Enable the granting of permissions: grant permissions to users, grant permissions to roles, grant roles to users. The permission granting process includes the option of whether the granted user can further grant those permissions to other users/roles (specified with WITH GRANT OPTION). Permissions like SELECT and UPDATE can be granted down to the column level; however, INSERT and DELETE permissions cannot.
+- Allow the revocation of permissions from users/roles.
+- Allow the verification of permissions granted to entities.
+- Permit the modification of permissions for users/roles.
+
+## Implement a system logging function (requiring Oracle Database High-Quality Tablespace):
+- Admin has the ability to enable/disable system-wide logging.
+- Admin is authorized to log actions performed by specific users on specific objects. These actions include: login, modification of user accounts, SELECT, INSERT, UPDATE, DELETE, EXECUTE; the objects are tables, views, stored procedures, and functions. Admin also has the authority to choose whether to log the success or failure of the actions.
+- Verify the system log data.
